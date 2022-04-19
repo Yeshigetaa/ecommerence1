@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use app\Http\controolrs\productcontroller;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product/register',[productcontroller::class, 'register']);
-Route::post('/product/register',[productcontroller::class,'store']);
+Route::get('/product/register',[ProductController::class, 'register']);
+Route::post('/product/register',[ProductController::class,'store']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
