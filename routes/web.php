@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
+use app\Http\controolrs\productcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-use app\Http\controolrs\productcontroller;
+
 Route::get('/product/register',[productcontroller::class, 'register']);
 Route::post('/product/register',[productcontroller::class,'store']);
 Auth::routes();
