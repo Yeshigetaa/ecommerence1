@@ -4,7 +4,7 @@
     </header>
     <body>
     <center>
-        <font color ="red">
+        <font color ="blue">
         <h1>Product REGISTRATION Form PAGE</h2>
 </font>
      <form>
