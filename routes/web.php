@@ -21,8 +21,8 @@ Route::get('/', function () {
 Route::get('/Catagory1/register',[Catagory1Controller::class,'register'])->name('Catagory1/register');
 Route::post('/Catagory1/register',[Catagory1Controller::class,'store']);
 Route::get('/Catagory1/list', [Catagory1Controller::class, 'get_all'])->name('Catagory1/list');
-Route::get('/Catagory1product/edit/{id}', [Catagory1Controller::class, 'edit']);
-Route::post('/Catagory1/update',[Catagory1Controller::class,'update'])->name('Catagory1/update')->name('Catagory1/edit');
+Route::get('/Catagory1/edit/{id}', [Catagory1Controller::class, 'edit']);
+Route::post('/Catagory1/update',[Catagory1Controller::class,'update'])->name('Catagory1/update')->name('Catagory1/update');
 Route::get('/Catagory1/delete/{id}', [Catagory1Controller::class, 'delete']);
 Route::get('/Catagory1/search/{id}', [Catagory1Controller::class, 'search'])->name('Catagory1/search');
 Route::get('/product/list', [ProductController::class, 'get_all'])->name('product/list');
